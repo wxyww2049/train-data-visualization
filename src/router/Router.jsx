@@ -6,6 +6,8 @@ import FlowMap from "../pages/flowmap/FlowMap";
 import RankListPage from "../pages/ranklist/RankListPage";
 import Freque from "../pages/frequency/Freque";
 import Home from "../pages/overall/Home";
+import AICharts from "../pages/AIcharts/AICharts";
+import KnowledgeGraph from "../pages/knowledgeGraph/KnowledgeGraph";
 export default function Router() {
   return (
     <HashRouter>
@@ -17,6 +19,8 @@ export default function Router() {
           <Route path="排行榜" element={<RankListPage />} />
           <Route path="热力图" element={<HotMap />} />
           <Route path="列车趋势" element={<FlowMap />} />
+          <Route path="AI生成图表" element={<AICharts />} />
+          <Route path="知识图谱" element={<KnowledgeGraph />} />
         </Route>
       </Routes>
     </HashRouter>
